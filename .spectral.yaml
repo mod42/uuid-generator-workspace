@@ -1,4 +1,3 @@
-extends: ["spectral:oas", "spectral:asyncapi"]
 rules:
   paths-start-with-projects-pathname:
     description: Paths should start with your projects assigned prefix.

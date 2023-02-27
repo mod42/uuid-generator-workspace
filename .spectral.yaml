@@ -7,4 +7,4 @@ rules:
     then:
       function: pattern
       functionOptions:
-        match: "^(\/anything1.*)"
+        match: "^(\/project1.*)"

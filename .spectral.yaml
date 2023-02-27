@@ -4,10 +4,8 @@ rules:
     message: "{{property}} should contain project approved prefix"
     severity: warn
     given: 
-      - $.paths[*]~ 
-      - $.basepath[*]~]
+      - $.paths[*]~
     then:
       function: pattern
       functionOptions:
-        match: "^(\/project1.*)"
-        
+        match: "^(\/project1)"

@@ -1,10 +1,11 @@
 rules:
   paths-start-with-projects-pathname:
     description: Paths should start with your projects assigned prefix.
-    message: "{{property}} should be kebab-case (lower-case and separated with hyphens)"
+    message: "{{property}} should contain project approved prefix"
     severity: warn
-    given: [ $.paths[*]~ , $.paths[*]~]
-
+    given: 
+      - $.paths[*]~ 
+      - $.basepath[*]~]
     then:
       function: pattern
       functionOptions:

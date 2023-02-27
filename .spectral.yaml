@@ -1,3 +1,4 @@
+extends: ["spectral:oas", "spectral:asyncapi"]
 rules:
   paths-kebab-case:
     description: Paths should start with your projects assigned prefix.
